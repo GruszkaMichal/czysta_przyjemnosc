@@ -1,15 +1,16 @@
 footer{
     position: relative;
-    height: 300px;
     background: radial-gradient(67.29% 227.07% at 67.29% 42.18%, rgba(255, 205, 31, 0.79) 0%, #FFCD1F 100%);
+    padding: 100px 0 45px 0;
+    margin-top: 150px;
 }
+
 .circles{
     background-color: #fff;
     width: 104px;
     height: 104px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
-    display: block;
     text-decoration: none;
     color: #000;
     font-size: 1.5rem;
@@ -26,7 +27,37 @@ footer{
     top: -52px;
     left: calc(50% - 52px);
 }
+
+.who_am_i , .who_am_i a{
+    color: #fff;
+    text-decoration: none;
+}
 .circles:hover{
     background-color: #3f910c;
     color: #fff;
+}
+.footer-content{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+.footer-content img{
+    margin-bottom: 25px;
+    display: block;
+}
+.footer-content p{
+    padding-left: 60px;
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+.footer-maps iframe{
+    border: solid 5px #EFBA00;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.who_am_i{
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 15px;
+    background-color: #EFBA00;
+    padding: 20px 0;
 }
