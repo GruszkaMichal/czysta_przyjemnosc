@@ -2,7 +2,7 @@
     font-size: 62.5%;
     font-family: 'Jura';
 }
-a{
+body a{
     text-decoration: none;
     color: #000;
     transition: color 0.3s ease-in-out;
@@ -14,11 +14,58 @@ body .px-110{
     padding-left: 110px;
     padding-right: 110px;
 }
+.my-btn{
+    padding: 13px 40px 13px;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+.my-btn.btn-green{
+    background-color: #629742;
+    display: flex;
+    color: #fff;
+    width: fit-content;
+    align-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    border: solid 2px #629742;
+}
+.my-btn.btn-white{
+    background-color: #fff;
+    display: flex;
+    width: fit-content;
+    align-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.my-btn.btn-white:hover{
+    background-color: #5b8c3f;
+    color: #fff;
+}
+.my-btn.btn-white:hover img:first-child{
+    filter: none;
+}
+.my-btn.btn-green:hover{
+    background-color: #fff;
+    color: #629742;
+    box-shadow: 0px 0px 15px 4px rgba(98, 151, 66, 0.73);
+}
+.btn-arrow img:first-child{
+    transition: all 0.3s ease-in-out;
+    margin-right: -4px;
+    margin-left: 15px;
+    margin-top: 1px;
+    filter: invert(52%) sepia(36%) saturate(574%) hue-rotate(54deg) brightness(93%) contrast(95%);
+}
+.btn-arrow img:last-child{
+    margin-top: 1px;
+    filter: invert(0%) sepia(12%) saturate(503%) hue-rotate(51deg) brightness(93%) contrast(94%);
+}
 
 /* customers feedback */
 .feedback-wrap{
     background-color: #EDEDED;
     padding: 170px 0 70px 0;
+    position: relative;
 }
 .feedback-header{
     max-width: 954px;
@@ -28,6 +75,11 @@ body .px-110{
 .feedback-item-box{
     max-width: 1159px;
     margin: auto;
+    position: relative;
+    z-index: 2;
+}
+.feedback-item-box a{
+    margin-left: auto;
 }
 .feedback-header hr{
     max-width: 80%;
@@ -94,6 +146,59 @@ body .px-110{
 .feedback-stars img{
     margin-right: 9px;
 }
+.like-bg{
+    position: absolute;
+    bottom: 0;
+}
+
+/* -- Price header --*/
+    .price-wrapper{
+        padding: 65px 0 60px 0;
+    }
+
+    .price-header h3{
+        font-weight: 600;
+        font-size: 5rem;
+        position: relative;
+        width: fit-content;
+        margin: auto;
+    }
+
+    .price-header h3::after{
+        content: " ";
+        display: block;
+        width: calc(100% + 14px);
+        height: 27px;
+        bottom: 0px;
+        left: -7px;
+        position: absolute;
+        background-color: #EFBA00;
+        z-index: -1;
+    }
+    .price-content{
+        margin-top: 50px;
+    }
+    .price-content strong{
+        font-weight: 600;
+        font-size: 3rem;
+        padding-bottom: 20px;
+    }
+    .price-content p {
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 43px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .price-button-wraper{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+    .price-button-wraper a{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
 
 .icon{
