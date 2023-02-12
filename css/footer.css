@@ -2,9 +2,14 @@ footer{
     position: relative;
     background: radial-gradient(67.29% 227.07% at 67.29% 42.18%, rgba(255, 205, 31, 0.79) 0%, #FFCD1F 100%);
     padding: 100px 0 45px 0;
-    margin-top: 150px;
 }
-
+footer a{
+    color: #000;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #fff;
+}
 .circles{
     background-color: #fff;
     width: 104px;
@@ -35,6 +40,9 @@ footer{
 .circles:hover{
     background-color: #3f910c;
     color: #fff;
+}
+.circles:hover img{
+    filter: invert(96%) sepia(113%) saturate(1%) hue-rotate(167deg) brightness(178%) contrast(105%);
 }
 .footer-content{
     font-weight: 500;
