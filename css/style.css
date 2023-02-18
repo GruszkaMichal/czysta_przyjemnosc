@@ -1,25 +1,58 @@
-:root{
+:root {
     font-size: 62.5%;
     font-family: 'Jura';
 }
-body a{
+
+body a {
     text-decoration: none;
     color: #000;
     transition: color 0.3s ease-in-out;
 }
-a:hover{
+
+a:hover {
     color: #343434;
 }
-body .px-110{
+
+body .px-110 {
     padding-left: 110px;
     padding-right: 110px;
 }
-.my-btn{
+
+/* header */
+.header-bg {
+    background: linear-gradient(77.58deg, rgba(46, 116, 3, 0.8) 0%, rgba(46, 116, 3, 0.8) 0.01%, rgba(0, 109, 119, 0.4) 100%, rgba(46, 116, 3, 0.4) 100%);
+    position: relative;
+
+}
+
+.header-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.header-bg::after {
+    content: "";
+    display: block;
+    background: url(../img/svg/baner-element.svg) no-repeat;
+    max-width: 1150px;
+    width: 100%;
+    height: 729px;
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+}
+
+
+.my-btn {
     padding: 13px 40px 13px;
     font-size: 2.4rem;
     font-weight: 600;
 }
-.my-btn.btn-green{
+
+.my-btn.btn-green {
     background-color: #629742;
     display: flex;
     color: #fff;
@@ -29,7 +62,8 @@ body .px-110{
     transition: all 0.3s ease-in-out;
     border: solid 2px #629742;
 }
-.my-btn.btn-white{
+
+.my-btn.btn-white {
     background-color: #fff;
     display: flex;
     width: fit-content;
@@ -37,51 +71,60 @@ body .px-110{
     align-items: center;
     transition: all 0.3s ease-in-out;
 }
-.my-btn.btn-white:hover{
+
+.my-btn.btn-white:hover {
     background-color: #5b8c3f;
     color: #fff;
 }
-.my-btn.btn-white:hover img:first-child{
+
+.my-btn.btn-white:hover img:first-child {
     filter: none;
 }
-.my-btn.btn-green:hover{
+
+.my-btn.btn-green:hover {
     background-color: #fff;
     color: #629742;
     box-shadow: 0px 0px 15px 4px rgba(98, 151, 66, 0.73);
 }
-.btn-arrow img:first-child{
+
+.btn-arrow img:first-child {
     transition: all 0.3s ease-in-out;
     margin-right: -4px;
     margin-left: 15px;
     margin-top: 1px;
     filter: invert(52%) sepia(36%) saturate(574%) hue-rotate(54deg) brightness(93%) contrast(95%);
 }
-.btn-arrow img:last-child{
+
+.btn-arrow img:last-child {
     margin-top: 1px;
     filter: invert(0%) sepia(12%) saturate(503%) hue-rotate(51deg) brightness(93%) contrast(94%);
 }
 
 /* customers feedback */
-.feedback-wrap{
+.feedback-wrap {
     background-color: #EDEDED;
     padding: 170px 0 70px 0;
     position: relative;
 }
-.feedback-header{
+
+.feedback-header {
     max-width: 954px;
     margin: auto;
     margin-bottom: 130px;
 }
-.feedback-item-box{
+
+.feedback-item-box {
     max-width: 1159px;
     margin: auto;
     position: relative;
     z-index: 2;
 }
-.feedback-item-box a{
+
+.feedback-item-box a {
     margin-left: auto;
 }
-.feedback-header hr{
+
+.feedback-header hr {
     max-width: 80%;
     opacity: 1;
     margin: auto;
@@ -89,24 +132,28 @@ body .px-110{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-.feedback-header h4{
+
+.feedback-header h4 {
     font-weight: 600;
     font-size: 5rem;
     text-align: center;
 }
-.feedback-header p{
+
+.feedback-header p {
     font-weight: 600;
     font-size: 3.6rem;
     text-align: center;
     line-height: 42px;
 }
-.feedback-header b{
+
+.feedback-header b {
     font-weight: 600;
     position: relative;
     z-index: 3;
     display: inline-block;
 }
-.feedback-header b::after{
+
+.feedback-header b::after {
     content: " ";
     display: block;
     width: calc(100% + 14px);
@@ -117,105 +164,188 @@ body .px-110{
     background-color: #EFBA00;
     z-index: -1;
 }
-.feedback-item{
+
+.feedback-item {
     background-color: #fff;
     padding: 50px;
     margin-top: 35px;
     margin-bottom: 35px;
 }
-.feedback-item-text{
+
+.feedback-item-text {
     font-weight: 700;
     font-size: 2.6rem;
     line-height: 31px;
 }
-.feedback-item time{
+
+.feedback-item time {
     font-weight: 500;
     font-size: 1.6rem;
     line-height: 19px;
-    color: #A4A4A4;    
+    color: #A4A4A4;
     margin-top: 15px;
     display: block;
 }
-.feedback-name{
+
+.feedback-name {
     font-weight: 700;
     font-size: 2rem;
     margin-top: 40px;
     display: block;
     margin-bottom: 10px;
 }
-.feedback-stars img{
+
+.feedback-stars img {
     margin-right: 9px;
 }
-.like-bg{
+
+.like-bg {
     position: absolute;
     bottom: 0;
+    max-width: 773px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
+/* header*/
+
+header{
+    position: relative;
+}
+.header-container{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 30px 0 30px 0;
+}
+.header-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+.nav-item{
+    font-weight: 700;
+    font-size: 3.4rem;
+    color: #fff ;
+    margin-right: 40px;
+}
+.nav-item:last-child{
+    margin-right: 0;
+}
+.header-content{
+    margin-top: 60px;
+    position: relative;
+}
+.header-content::after{
+    display: block;
+    content: "";
+    width: 1602px;
+    height: 1602px;
+    position: absolute;
+    left: calc(-1602px / 2 + -90px);
+    background-color: #fff;
+    border-radius: 60%;
+    top: calc(-1602px / 2 + -170px);
+    z-index: 1;
+}
+.header-content .content{
+    position: relative;
+    z-index: 2;
+}
+.header-content h1{
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 57px;
+}
+.header-content strong{
+    font-weight: 400;
+    font-size: 3.6rem;
+    margin-bottom: 40px;
+    display: block;
+}
+.header-content p{
+    font-weight: 400;
+    font-size: 3.0rem;
+    margin-bottom: 40px;
+}
+
+
 /* -- Price header --*/
-    .price-wrapper{
-        padding: 65px 0 60px 0;
-    }
+.price-wrapper {
+    padding: 65px 0 60px 0;
+}
 
-    .price-header h3{
-        font-weight: 600;
-        font-size: 5rem;
-        position: relative;
-        width: fit-content;
-        margin: auto;
-    }
+.price-header h3 {
+    font-weight: 600;
+    font-size: 5rem;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
 
-    .price-header h3::after{
-        content: " ";
-        display: block;
-        width: calc(100% + 14px);
-        height: 27px;
-        bottom: 0px;
-        left: -7px;
-        position: absolute;
-        background-color: #EFBA00;
-        z-index: -1;
-    }
-    .price-content{
-        margin-top: 50px;
-    }
-    .price-content strong{
-        font-weight: 600;
-        font-size: 3rem;
-        padding-bottom: 20px;
-    }
-    .price-content p {
-        font-weight: 400;
-        font-size: 2.4rem;
-        line-height: 43px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .price-button-wraper{
-        display: flex;
-        justify-content: center;
-        margin-top: 60px;
-    }
-    .price-button-wraper a{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+.price-header h3::after {
+    content: " ";
+    display: block;
+    width: calc(100% + 14px);
+    height: 27px;
+    bottom: 0px;
+    left: -7px;
+    position: absolute;
+    background-color: #EFBA00;
+    z-index: -1;
+}
+
+.price-content {
+    margin-top: 50px;
+}
+
+.price-content strong {
+    font-weight: 600;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.price-content p {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.price-button-wraper {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.price-button-wraper a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 
-.icon{
+.icon {
     padding-left: 60px;
     position: relative;
     display: block;
     margin-bottom: 10px;
     width: max-content;
 }
-.icon-mail::after{
+
+.icon-mail::after {
     background-image: url(../img/svg/icon-mail.svg);
 }
-.icon-phone::after{
+
+.icon-phone::after {
     background-image: url(../img/svg/icon-phone.svg);
 }
+
 .icon-mail::after,
-.icon-phone::after{
+.icon-phone::after {
     content: "";
     display: block;
     height: 28px;
@@ -223,4 +353,10 @@ body .px-110{
     position: absolute;
     left: 15px;
     top: 0px;
+}
+
+@media(max-width:992px){
+    body .px-110{
+        padding: 0;
+    }
 }

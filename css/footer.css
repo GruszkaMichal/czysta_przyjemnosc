@@ -61,6 +61,7 @@ footer a:hover{
 .footer-maps iframe{
     border: solid 5px #EFBA00;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
 }
 .who_am_i{
     font-weight: 500;
@@ -68,4 +69,13 @@ footer a:hover{
     line-height: 15px;
     background-color: #EFBA00;
     padding: 20px 0;
+}
+
+@media(max-width:992px){
+    .footer-maps iframe{
+        width: 100%;
+    }
+    footer .row{
+        flex-direction: column;
+    }
 }
