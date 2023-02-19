@@ -9,6 +9,40 @@ body a {
     transition: color 0.3s ease-in-out;
 }
 
+/* about us */
+
+.about-us__header{
+    margin-bottom: 150px;
+    text-align: center;
+}
+.about-us__content-wrap{
+    background: linear-gradient(84.51deg, #D7D7D7 0%, #F4F4F4 51.56%, #D5D2D2 100%);
+}
+.about-us__content-wrap{
+    max-width: 1920px;
+    margin: auto;
+}
+.about-us__content__img{
+    position: relative;
+}
+.about-us__content__img img{
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+.about-us__content__box{
+    display: flex;
+}
+.about-us__content__text{
+    max-width: 771px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 43px;
+    margin: 60px 50px 70px 80px;
+}
+
+
 a:hover {
     color: #343434;
 }
@@ -278,7 +312,7 @@ header{
     padding: 65px 0 60px 0;
 }
 
-.price-header h3 {
+.price-header * {
     font-weight: 600;
     font-size: 5rem;
     position: relative;
@@ -286,7 +320,7 @@ header{
     margin: auto;
 }
 
-.price-header h3::after {
+.price-header *::after {
     content: " ";
     display: block;
     width: calc(100% + 14px);
